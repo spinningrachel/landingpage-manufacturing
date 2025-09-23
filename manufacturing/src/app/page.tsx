@@ -334,7 +334,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Purpose-built for Manufacturing</h4>
+                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Purpose-built for Manufacturing</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Tailored to manufacturing workflows with enterprise-grade security</p>
                 </div>
                 <div
@@ -346,7 +346,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Scalable Architecture</h4>
+                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Scalable Architecture</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Handle thousands of inspections per hour with consistent performance</p>
                 </div>
                 <div
@@ -358,7 +358,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Aerospace & Defense Ready</h4>
+                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Aerospace & Defense Ready</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Proven CAD reuse capabilities for complex aerospace and defense manufacturing requirements</p>
                 </div>
                 <div
@@ -370,7 +370,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Expert Support</h4>
+                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Expert Support</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Dedicated implementation team, ongoing technical support, and a true partner in your success</p>
                 </div>
               </div>
