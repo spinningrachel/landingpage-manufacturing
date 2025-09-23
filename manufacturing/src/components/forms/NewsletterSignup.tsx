@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import { Block, Form, TextInput, Button } from '@/devlink/_Builtin';
 
 export function NewsletterSignup() {
   const [email, setEmail] = useState('');
@@ -16,38 +15,35 @@ export function NewsletterSignup() {
 
   if (isSubmitted) {
     return (
-      <Block
-        tag="div"
+      <div
         style={{
           textAlign: 'center',
           padding: '32px'
         }}
       >
-        <Block
-          tag="p"
+        <p
           style={{
             color: '#16a34a',
             fontSize: '1rem'
           }}
         >
           ✓ Thank you for subscribing to the Visual Layer newsletter!
-        </Block>
-      </Block>
+        </p>
+      </div>
     );
   }
 
   return (
-    <Block
-      tag="div"
+    <div
       style={{
         backgroundColor: '#f9fafb',
         borderRadius: '8px',
         padding: '32px',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
       }}
     >
-      <Block
-        tag="h3"
+      <h3
         style={{
           fontSize: '1.25rem',
           fontWeight: 600,
@@ -56,9 +52,8 @@ export function NewsletterSignup() {
         }}
       >
         Subscribe to our newsletter
-      </Block>
-      <Block
-        tag="p"
+      </h3>
+      <p
         style={{
           color: '#6b7280',
           marginBottom: '24px',
@@ -66,9 +61,9 @@ export function NewsletterSignup() {
         }}
       >
         Get weekly insights on vision AI for manufacturing
-      </Block>
+      </p>
 
-      <Form
+      <form
         onSubmit={handleSubmit}
         style={{
           display: 'flex',
@@ -78,7 +73,7 @@ export function NewsletterSignup() {
           alignItems: 'center'
         }}
       >
-        <TextInput
+        <input
           type="email"
           placeholder="Enter your email"
           value={email}
@@ -92,7 +87,7 @@ export function NewsletterSignup() {
             fontSize: '0.875rem'
           }}
         />
-        <Button
+        <button
           type="submit"
           style={{
             backgroundColor: '#2563eb',
@@ -109,8 +104,8 @@ export function NewsletterSignup() {
           }}
         >
           →
-        </Button>
-      </Form>
-    </Block>
+        </button>
+      </form>
+    </div>
   );
 }

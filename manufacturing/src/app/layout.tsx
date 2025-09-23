@@ -34,9 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
       >
         <DevLinkProvider>
-          {/* Add here any Navbar or Header you want to be present on all pages */}
           {children}
-          {/* Add here any Footer you want to be present on all pages */}
         </DevLinkProvider>
       </body>
     </html>
