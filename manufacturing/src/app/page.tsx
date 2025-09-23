@@ -61,7 +61,7 @@ export default function Home() {
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "16px" }}>
                   <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}></div>
                   <div>
-                    <h5 style={{ marginBottom: "4px", color: "white", fontWeight: 600, fontSize: "14px" }}>DATA QUALITY FIRST</h5>
+                    <h4 style={{ marginBottom: "4px", color: "white", fontWeight: 600 }}>DATA QUALITY FIRST</h4>
                     <p style={{ color: "#d1d5db", fontSize: "0.875rem" }}>
                       Curates and validates data, uncovers unseen defects, and keeps results production-ready.
                     </p>
@@ -70,7 +70,7 @@ export default function Home() {
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "16px" }}>
                   <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}></div>
                   <div>
-                    <h5 style={{ marginBottom: "4px", color: "white", fontWeight: 600, fontSize: "14px" }}>RAPID DEPLOYMENT</h5>
+                    <h4 style={{ marginBottom: "4px", color: "white", fontWeight: 600 }}>RAPID DEPLOYMENT</h4>
                     <p style={{ color: "#d1d5db", fontSize: "0.875rem" }}>
                       Accelerate model training and retraining in days instead of months with models that actually work.
                     </p>
@@ -79,7 +79,7 @@ export default function Home() {
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
                   <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}></div>
                   <div>
-                    <h5 style={{ marginBottom: "4px", color: "white", fontWeight: 600, fontSize: "14px" }}>CPU-FIRST PLATFORM</h5>
+                    <h4 style={{ marginBottom: "4px", color: "white", fontWeight: 600 }}>CPU-FIRST PLATFORM</h4>
                     <p style={{ color: "#d1d5db", fontSize: "0.875rem" }}>
                       Get up and running on standard hardware for ingestion and indexing, with optimized infrastructure and minimal GPU dependency.
                     </p>
@@ -334,7 +334,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Purpose-built for Manufacturing</h5>
+                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Purpose-built for Manufacturing</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Tailored to manufacturing workflows with enterprise-grade security</p>
                 </div>
                 <div
@@ -346,7 +346,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Scalable Architecture</h5>
+                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Scalable Architecture</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Handle thousands of inspections per hour with consistent performance</p>
                 </div>
                 <div
@@ -358,7 +358,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Aerospace & Defense Ready</h5>
+                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Aerospace & Defense Ready</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Proven CAD reuse capabilities for complex aerospace and defense manufacturing requirements</p>
                 </div>
                 <div
@@ -370,7 +370,7 @@ export default function Home() {
                     boxShadow: "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
                   }}
                 >
-                  <h5 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Expert Support</h5>
+                  <h4 style={{ marginBottom: "8px", fontWeight: 600, color: "#111827" }}>Expert Support</h4>
                   <p style={{ color: "#6b7280", fontSize: "0.875rem" }}>Dedicated implementation team, ongoing technical support, and a true partner in your success</p>
                 </div>
               </div>
