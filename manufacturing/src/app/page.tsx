@@ -59,7 +59,7 @@ export default function Home() {
               {/* Demo Benefits */}
               <div style={{ marginBottom: "32px" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "16px" }}>
-                  <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}>📊</div>
+                  <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}></div>
                   <div>
                     <h4 style={{ marginBottom: "4px", color: "white", fontWeight: 600, fontSize: "14px" }}>DATA QUALITY FIRST</h4>
                     <p style={{ color: "#d1d5db", fontSize: "0.875rem" }}>
@@ -68,7 +68,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "16px" }}>
-                  <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}>⚡</div>
+                  <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}></div>
                   <div>
                     <h4 style={{ marginBottom: "4px", color: "white", fontWeight: 600, fontSize: "14px" }}>RAPID DEPLOYMENT</h4>
                     <p style={{ color: "#d1d5db", fontSize: "0.875rem" }}>
@@ -77,7 +77,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
-                  <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}>💻</div>
+                  <div style={{ color: "#60a5fa", fontSize: "1.5rem", marginTop: "4px" }}></div>
                   <div>
                     <h4 style={{ marginBottom: "4px", color: "white", fontWeight: 600, fontSize: "14px" }}>CPU-FIRST PLATFORM</h4>
                     <p style={{ color: "#d1d5db", fontSize: "0.875rem" }}>
