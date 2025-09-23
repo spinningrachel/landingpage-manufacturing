@@ -1,0 +1,23 @@
+.is-h3 {
+  font-family: 'DM Sans';
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+@media screen and (max-width: 767px) {
+  .is-h3 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .is-h3.is-tabs {
+    font-size: 1.375rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .is-h3.is-mobile-medium {
+    font-weight: 500;
+  }
+}
