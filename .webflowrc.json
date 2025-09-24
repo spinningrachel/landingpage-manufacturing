@@ -1,0 +1,7 @@
+{
+  "default": {
+    "host": "https://api.webflow.com",
+    "projectId": "0c6e3740-7fde-49ae-afd3-ff80010c6ffe",
+    "authToken": "3dff604384995ffb6fcab2db750af0cb97fccdd4fbea5ff114779a87ad1d91c7"
+  }
+}

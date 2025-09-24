@@ -5,6 +5,18 @@
 
   export default defineConfig({
     plugins: [react()],
+    esbuild: {
+      include: [/src\/.*\.[jt]sx?$/, /src\/.*\.js$/],
+      exclude: [],
+      loader: 'jsx'
+    },
+    optimizeDeps: {
+      esbuildOptions: {
+        loader: {
+          '.js': 'jsx'
+        }
+      }
+    },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {

@@ -1,0 +1,15 @@
+{
+  "telemetry": {
+    "global": {
+      "allowTelemetry": true,
+      "lastPrompted": 1758728718325,
+      "version": "1.8.44"
+    }
+  },
+  "devlink": {
+    "rootDir": "./src/components/devlink",
+    "src": "./src/components/devlink",
+    "type": "react",
+    "mountPath": "/"
+  }
+}
