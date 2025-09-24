@@ -77,9 +77,9 @@ export default function App() {
               {/* Demo Benefits */}
               <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "16px" }}>
               <img
-                src="/quality.png"
+                src="/bullet.svg"
                 alt="Data Quality Icon"
-                style={{ width: "24px", height: "24px", marginTop: "4px" }}
+                style={{ width: "24px", height: "24px", marginTop: "4px", filter: "brightness(0) invert(1)" }}
               />
               <div>
                 <h4 style={{ marginBottom: "4px", color: "white", fontWeight: "900" }}>DATA QUALITY FIRST</h4>
@@ -91,9 +91,9 @@ export default function App() {
 
             <div style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "16px" }}>
               <img
-                src="speed.png"
+                src="/bullet.svg"
                 alt="Rapid Deployment Icon"
-                style={{ width: "24px", height: "24px", marginTop: "4px" }}
+                style={{ width: "24px", height: "24px", marginTop: "4px", filter: "brightness(0) invert(1)" }}
               />
               <div>
                 <h4 style={{ marginBottom: "4px", color: "white", fontWeight: "900" }}>RAPID DEPLOYMENT</h4>
@@ -105,9 +105,9 @@ export default function App() {
 
             <div style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
               <img
-                src="increase-trend.png"
+                src="/bullet.svg"
                 alt="CPU First Icon"
-                style={{ width: "24px", height: "24px", marginTop: "4px" }}
+                style={{ width: "24px", height: "24px", marginTop: "4px", filter: "brightness(0) invert(1)" }}
               />
               <div>
                 <h4 style={{ marginBottom: "4px", color: "white", fontWeight: "900" }}>CPU-FIRST PLATFORM</h4>
@@ -165,7 +165,7 @@ export default function App() {
 <section style={{ padding: "80px 0" }}>
             <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px" }}>
             <img
-                src="/manufacturing-images.png"
+                src="/vlb-explore-manufacturing.png"
                 alt="Industrial AI technology automation"
                 style={{
                   borderRadius: "8px",
@@ -233,7 +233,7 @@ export default function App() {
                                     <img
                   src="/factory.svg"
                   alt="factory Icon"
-                  style={{ width: "40px", height: "40px" }}
+                  style={{ width: "40px", height: "40px",filter: "brightness(0) invert(1)"  }}
                 />
                 </div>
                 <h3 style={{ fontSize: "1.25rem", marginBottom: "16px", color: "#111827" }}>
@@ -272,7 +272,7 @@ export default function App() {
                   <img
                   src="/dollar.svg"
                   alt="dollar Icon"
-                  style={{ width: "40px", height: "40px" }}
+                  style={{ width: "40px", height: "40px",filter: "brightness(0) invert(1)"  }}
                 />
                 </div>
                 <h3 style={{ fontSize: "1.25rem", marginBottom: "16px", color: "#111827" }}>
@@ -311,7 +311,7 @@ export default function App() {
                   <img
                   src="/find.svg"
                   alt="find Icon"
-                  style={{ width: "40px", height: "40px" }}
+                  style={{ width: "40px", height: "40px", filter: "brightness(0) invert(1)" }}
                   />
                 </div>
                 <h3 style={{ fontSize: "1.25rem", marginBottom: "16px", color: "#111827" }}>
@@ -362,7 +362,7 @@ export default function App() {
               <div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
                   <img
-  src="/bullet.png"
+  src="/bullet.svg"
   alt="Green Bullet"
   style={{ width: "20px", height: "20px" }}
 />
@@ -370,7 +370,7 @@ export default function App() {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
                   <img
-  src="/bullet.png"
+  src="/bullet.svg"
   alt="Green Bullet"
   style={{ width: "20px", height: "20px" }}
 />
@@ -378,7 +378,7 @@ export default function App() {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
                   <img
-  src="/bullet.png"
+  src="/bullet.svg"
   alt="Green Bullet"
   style={{ width: "20px", height: "20px" }}
 />
@@ -386,7 +386,7 @@ export default function App() {
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                   <img
-  src="/bullet.png"
+  src="/bullet.svg"
   alt="Green Bullet"
   style={{ width: "20px", height: "20px" }}
 />
@@ -501,7 +501,7 @@ export default function App() {
           </div>
           <div style={{ marginTop: "80px" }}>
             <img
-                src="/vlb-explore-manufacturing.png"
+                src="/vlb-explore-manufacturing2.png"
                 alt="Industrial AI technology automation"
                 style={{
                   borderRadius: "8px",
