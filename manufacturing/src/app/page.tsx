@@ -4,8 +4,7 @@ import { DemoForm } from "@/components/forms/DemoForm";
 import { NewsletterSignup } from "@/components/forms/NewsletterSignup";
 
 export default function Home() {
-  const gradientBorder = {
-    position: "relative",
+  const gradientBorder: React.CSSProperties = {
     border: "none",
     borderRadius: "16px",
     background: "linear-gradient(to right, #A63B94, #0197D8, #1BC07D)",
