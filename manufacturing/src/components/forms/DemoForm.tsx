@@ -1,25 +1,6 @@
 "use client";
 
-import { useState } from 'react';
-
 export function DemoForm() {
-  const [formData, setFormData] = useState({
-    businessEmail: '',
-    companySize: '',
-    name: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Demo request submitted:', formData);
-    // Form submission logic would go here
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
   return (
     <div
       className="demo-form-container"
@@ -49,12 +30,14 @@ export function DemoForm() {
             fontSize: '0.875rem'
           }}
         >
-          The demo will show you:
+          Send us your details, and we'll get back to you to schedule a personalized demo.
         </p>
       </div>
 
       <form
-        onSubmit={handleSubmit}
+        name="Pricing form"
+        method="POST"
+        data-name="Pricing form"
         style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}
       >
         <div>
@@ -73,9 +56,8 @@ export function DemoForm() {
           <input
             type="email"
             id="businessEmail"
+            name="Business Email"
             placeholder="you@company.com"
-            value={formData.businessEmail}
-            onChange={(e) => handleInputChange('businessEmail', e.target.value)}
             required
             style={{
               width: '100%',
@@ -102,8 +84,7 @@ export function DemoForm() {
           </label>
           <select
             id="companySize"
-            value={formData.companySize}
-            onChange={(e) => handleInputChange('companySize', e.target.value)}
+            name="Company Size"
             required
             style={{
               width: '100%',
@@ -137,9 +118,8 @@ export function DemoForm() {
           <input
             type="text"
             id="name"
+            name="Name"
             placeholder="Your Name"
-            value={formData.name}
-            onChange={(e) => handleInputChange('name', e.target.value)}
             required
             style={{
               width: '100%',
@@ -166,9 +146,8 @@ export function DemoForm() {
           </label>
           <textarea
             id="message"
+            name="Message"
             placeholder="Tell us about your visual inspection challenges..."
-            value={formData.message}
-            onChange={(e) => handleInputChange('message', e.target.value)}
             rows={3}
             style={{
               width: '100%',
