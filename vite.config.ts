@@ -8,7 +8,7 @@
     esbuild: {
       include: [/src\/.*\.[jt]sx?$/, /src\/.*\.js$/],
       exclude: [],
-      loader: 'jsx'
+      loader: 'tsx'
     },
     optimizeDeps: {
       esbuildOptions: {
