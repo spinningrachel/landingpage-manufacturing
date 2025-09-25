@@ -13,11 +13,6 @@
     "mountPath": "/"
   },
   "cloud": {
-    "project_id": "0c6e3740-7fde-49ae-afd3-ff80010c6ffe",
-    "framework": "astro",
-    "buildCommand": "npm run build",
-    "outputDirectory": "build",
-    "devCommand": "npm run dev",
-    "installCommand": "npm install"
+    "project_id": "0c6e3740-7fde-49ae-afd3-ff80010c6ffe"
   }
 }
