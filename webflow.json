@@ -11,5 +11,15 @@
     "src": "./src/components/devlink",
     "type": "react",
     "mountPath": "/"
+  },
+  "cloud": {
+    "project_id": "0c6e3740-7fde-49ae-afd3-ff80010c6ffe",
+    "framework": {
+      "name": "vite",
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "devCommand": "npm run dev",
+      "installCommand": "npm install"
+    }
   }
 }
