@@ -35,6 +35,7 @@ export function NewsletterSignup() {
 
   return (
     <div
+      className="gradient-form-container"
       style={{
         backgroundColor: '#f9fafb',
         borderRadius: '8px',
