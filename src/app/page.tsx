@@ -1,12 +1,11 @@
 'use client';
 
 import { PricingForm } from '@/components/devlink/PricingForm';
-import { Nav } from '@/components/devlink/Nav';
-import { Marquee } from '@/components/devlink/Marquee';
-import { NewsletterSignup } from '@/components/forms/NewsletterSignup';
+import { NavBlockMenus } from '../../devlink/NavBlockMenus';
+import { NewsletterForm } from '../../devlink/NewsletterForm';
 import dynamic from 'next/dynamic';
 
-const FooterSection = dynamic(() => import('../../devlink/FooterSection').then(mod => ({ default: mod.FooterSection })), {
+const Footer = dynamic(() => import('../../devlink/Footer').then(mod => ({ default: mod.Footer })), {
   ssr: false
 });
 
@@ -15,7 +14,7 @@ export default function App() {
     
     <div className="min-h-screen bg-white font-sans">
       <section>
-        <Nav />
+        <NavBlockMenus />
       </section>
       {/* Hero Section */}
       <section style={{ backgroundColor: 'rgb(14, 0, 34)', padding: '80px 0px' }}>
@@ -303,28 +302,11 @@ export default function App() {
           </p>
           
         </div>
-        <section className="mx-10">
-          <div className="bg-white rounded-2xl p-8 mx-8" style={{ width: '100%' }}>
-              <Marquee />
-          </div>
+        <section className="rounded-xl " style={{ backgroundColor: 'rgb(14, 0, 34)', paddingTop: '20px'}}>
+          <div className="bg-white rounded-2xl " style={{ height: '100%', maxWidth: '1600px', marginLeft: 'auto', marginRight: 'auto' }}>
 
-          </section>
-          <section>
-                    <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-8 mx-20">
-            <NewsletterSignup />
+          <Footer />
           </div>
-
-          <div className="relative inline-block mx-10">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 rounded-lg blur opacity-75 animate-pulse mx-10"></div>
-            <button className="relative bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 text-white px-8 py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mx-40">
-              Book Your Demo Today
-            </button>
-          </div>
-        </section>
-              <section className="ml-10 mr-10" style={{ backgroundColor: 'rgb(14, 0, 34)' }}>
-                <div style={{padding: '20px 20px 20px 0px'}}>
-        <FooterSection />
-        </div>
       </section>
       </section>
     </div>

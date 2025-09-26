@@ -113,7 +113,7 @@ export function Footer({
                   className="hbs_newsletter-form"
                   value="%3Cscript%20charset%3D%22utf-8%22%20type%3D%22text%2Fjavascript%22%20src%3D%22%2F%2Fjs.hsforms.net%2Fforms%2Fembed%2Fv2.js%22%3E%3C%2Fscript%3E%0A%3Cscript%3E%0A%20%20hbspt.forms.create(%7B%0A%20%20%20%20region%3A%20%22na1%22%2C%0A%20%20%20%20portalId%3A%20%2223297802%22%2C%0A%20%20%20%20formId%3A%20%2228dd28cd-4885-4df9-af9a-64745ce12f0a%22%0A%20%20%7D)%3B%0A%3C%2Fscript%3E"
                 />
-                <_Builtin.Paragraph className="is-body-s">
+                <_Builtin.Paragraph className="is-body-s" style={{ color: 'rgba(246, 246, 246, 1)' }}>
                   {
                     "Get the latest news on AI, machine learning and computer vision, updates on events, blog posts, resources, and more."
                   }

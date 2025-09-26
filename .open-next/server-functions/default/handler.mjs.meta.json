@@ -3232,17 +3232,17 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js": {
-      "bytes": 7134,
+      "bytes": 5785,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
-      "bytes": 7231,
+      "bytes": 5882,
       "imports": [],
       "format": "cjs"
     },
     ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-      "bytes": 18720,
+      "bytes": 18859,
       "imports": [
         {
           "path": "path",
@@ -4047,7 +4047,7 @@
       "format": "cjs"
     },
     ".open-next/server-functions/default/.next/server/app/page.js": {
-      "bytes": 363811,
+      "bytes": 209131,
       "imports": [
         {
           "path": ".open-next/server-functions/default/node_modules/next/dist/shared/lib/router/utils/app-paths.js",
@@ -7301,13 +7301,13 @@
           "bytesInOutput": 586
         },
         ".open-next/server-functions/default/.next/server/app/page_client-reference-manifest.js": {
-          "bytesInOutput": 6595
+          "bytesInOutput": 5401
         },
         ".open-next/server-functions/default/.next/server/app/_not-found/page_client-reference-manifest.js": {
-          "bytesInOutput": 6704
+          "bytesInOutput": 5510
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/load-manifest.external.js": {
-          "bytesInOutput": 13208
+          "bytesInOutput": 13311
         },
         ".open-next/server-functions/default/node_modules/react/cjs/react-jsx-runtime.production.min.js": {
           "bytesInOutput": 773
@@ -7424,7 +7424,7 @@
           "bytesInOutput": 16595
         },
         ".open-next/server-functions/default/.next/server/app/page.js": {
-          "bytesInOutput": 397972
+          "bytesInOutput": 226746
         },
         ".open-next/server-functions/default/node_modules/next/dist/server/require.js": {
           "bytesInOutput": 11489
@@ -7697,7 +7697,7 @@
           "bytesInOutput": 51907
         }
       },
-      "bytes": 2895486
+      "bytes": 2721975
     }
   }
 }
