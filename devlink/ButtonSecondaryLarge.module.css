@@ -1,0 +1,58 @@
+.button-secondary-large {
+  display: flex;
+  padding: 1.0625rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+
+  border: 1.5px solid var(--color-primary--dark-purple-0-16);
+  border-radius: 0.75rem;
+
+  background-color: var(--color-primary--white);
+
+  font-family: 'DM Sans';
+  color: var(--color-primary--dark-grey);
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+}
+
+.button-secondary-large:hover {
+  border-color: var(--color-primary--dark-purple-0-36);
+}
+
+.button-secondary-large:active {
+  border-color: var(--color-primary--dark-purple);
+}
+
+@media screen and (max-width: 767px) {
+  .button-secondary-large {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .button-secondary-large {
+    width: 100%;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.8125rem 1rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .button-secondary-large.is-news {
+    width: auto;
+    max-width: none;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.button-secondary-large.hide {
+  display: none;
+}

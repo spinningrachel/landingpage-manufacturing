@@ -1,6 +1,7 @@
 import { PricingForm } from '@/components/devlink/PricingForm';
-import { HeaderStructure } from '@/components/devlink/HeaderStructure';
-import { Footer } from '@/components/devlink/Footer';
+import { Nav } from '@/components/devlink/Nav';
+import { Marquee } from '@/components/devlink/Marquee';
+import { FooterSection } from '../../devlink/FooterSection';
 import { NewsletterSignup } from '@/components/forms/NewsletterSignup';
 
 export default function App() {
@@ -8,7 +9,7 @@ export default function App() {
     
     <div className="min-h-screen bg-white font-sans">
       <section>
-        <HeaderStructure />
+        <Nav />
       </section>
       {/* Hero Section */}
       <section style={{ backgroundColor: 'rgb(14, 0, 34)', padding: '80px 0px' }}>
@@ -294,21 +295,29 @@ export default function App() {
           <p className=" text-gray-600 mb-8 leading-relaxed">
             Join hundreds of manufacturers already using Visual Layer to improve their defect detection and streamline their production processes.
           </p>
+          
+        </div>
+        <section className="mx-10">
+          <div className="bg-white rounded-2xl p-8 mx-8" style={{ width: '100%' }}>
+              <Marquee />
+          </div>
 
-          <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-8 mb-8">
+          </section>
+          <section>
+                    <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-8 mx-20">
             <NewsletterSignup />
           </div>
 
-          <div className="relative inline-block mb-10">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-lg blur opacity-75 animate-pulse"></div>
-            <button className="relative bg-gradient-to-r from-purple-600 to-blue-900 to-green-300 text-white px-8 py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">
+          <div className="relative inline-block mx-10">
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-lg blur opacity-75 animate-pulse mx-10"></div>
+            <button className="relative bg-gradient-to-r from-purple-600 to-blue-900 to-green-300 text-white px-8 py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mx-40">
               Book Your Demo Today
             </button>
           </div>
-        </div>
+        </section>
               <section className="ml-10 mr-10" style={{ backgroundColor: 'rgb(14, 0, 34)' }}>
                 <div style={{padding: '20px 20px 20px 0px'}}>
-        <Footer />
+        <FooterSection />
         </div>
       </section>
       </section>

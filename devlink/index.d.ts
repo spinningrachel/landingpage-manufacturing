@@ -1,0 +1,56 @@
+"use client";
+
+console.warn(
+  "⚠️ Avoid importing components from 'index.js' for better performance. This practice is deprecated and may be removed in the future."
+);
+
+export * as _Builtin from "./_Builtin";
+export * from "./devlinkContext";
+export * from "./interactions";
+export * from "./utils";
+export * from "./devlink";
+export * from "./ButtonPrimaryLarge";
+export * from "./ButtonPrimarySmall";
+export * from "./ButtonSecondaryLarge";
+export * from "./ButtonSecondarySmall";
+export * from "./ButtonThertiaryLarge";
+export * from "./CookiesBanner";
+export * from "./DevLinkProvider";
+export * from "./Footer";
+export * from "./FooterLink";
+export * from "./FooterLinkGrey";
+export * from "./FooterMenuTitle";
+export * from "./FooterSection";
+export * from "./GlobalCustomCode";
+export * from "./HeaderStructure";
+export * from "./InfoPopUp";
+export * from "./Marquee";
+export * from "./MenuListIndustries";
+export * from "./MenuListKeyFeatures";
+export * from "./Nav";
+export * from "./NavLink";
+export * from "./NavTabs";
+export * from "./PageStructure";
+export * from "./PopUpGad";
+export * from "./PopUpGaq";
+export * from "./PricingForm";
+export * from "./SectionHeaderBlock";
+export * from "./SectionPill";
+export * from "./SectionStructure";
+export * from "./Tab1Element";
+export * from "./Tab1Paragraph";
+export * from "./Tab1Title";
+export * from "./Tab2Element";
+export * from "./Tab2Paragraph";
+export * from "./Tab2Title";
+export * from "./Tab3Element";
+export * from "./Tab3Paragraph";
+export * from "./Tab3Title";
+export * from "./Tab4Element";
+export * from "./Tab4Paragraph";
+export * from "./Tab4Title";
+export * from "./TestimonialCard";
+export * from "./TestimonialsBlock1";
+export * from "./TestimonialsBlock2";
+export * from "./TestimonialsBlock3";
+export * from "./TestimonialsBlock4";

@@ -1,0 +1,41 @@
+.button-thertiary-large {
+  padding: 1.0625rem 1.5rem;
+  flex: 0 0 auto;
+
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: hsla(0, 0.00%, 100.00%, 0.32);
+  border-radius: 0.75rem;
+
+  background-color: hsla(0, 0.00%, 100.00%, 0.00);
+
+  font-family: 'DM Sans';
+  color: var(--color-primary--white);
+  font-size: 1.25rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.button-thertiary-large:hover {
+  border-color: hsla(0, 0.00%, 100.00%, 1.00);
+}
+
+.button-thertiary-large:active {
+  border-color: hsla(0, 0.00%, 100.00%, 1.00);
+}
+
+@media screen and (max-width: 479px) {
+  .button-thertiary-large {
+    width: 100%;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.8125rem 1rem;
+
+    text-align: center;
+  }
+}
+
+.button-thertiary-large.hide {
+  display: none;
+}
