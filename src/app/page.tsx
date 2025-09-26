@@ -224,7 +224,7 @@ export default function App() {
             </div>
 
             <div className="relative">
-              <img src="/vlb-explore-manufacturing.png"></img>
+              <img src="https://cdn.prod.website-files.com/66603dc3a8308da80ba98f5e/68d6ef63e69f7a62f2af78b0_vlb-explore-manufacturing.png"></img>
             </div>
           </div>
         </div>
