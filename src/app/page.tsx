@@ -301,7 +301,7 @@ export default function App() {
 
           <div className="relative inline-block mb-10">
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-lg blur opacity-75 animate-pulse"></div>
-            <button className="relative bg-gradient-to-r from-purple-600 to-blue-800 to-green-600 text-white px-8 py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">
+            <button className="relative bg-gradient-to-r from-purple-600 to-blue-900 to-green-300 text-white px-8 py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">
               Book Your Demo Today
             </button>
           </div>
