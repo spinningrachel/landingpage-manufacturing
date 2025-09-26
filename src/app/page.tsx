@@ -1,8 +1,14 @@
+'use client';
+
 import { PricingForm } from '@/components/devlink/PricingForm';
 import { Nav } from '@/components/devlink/Nav';
 import { Marquee } from '@/components/devlink/Marquee';
-import { FooterSection } from '../../devlink/FooterSection';
 import { NewsletterSignup } from '@/components/forms/NewsletterSignup';
+import dynamic from 'next/dynamic';
+
+const FooterSection = dynamic(() => import('../../devlink/FooterSection').then(mod => ({ default: mod.FooterSection })), {
+  ssr: false
+});
 
 export default function App() {
   return (
@@ -309,8 +315,8 @@ export default function App() {
           </div>
 
           <div className="relative inline-block mx-10">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 rounded-lg blur opacity-75 animate-pulse mx-10"></div>
-            <button className="relative bg-gradient-to-r from-purple-600 to-blue-900 to-green-300 text-white px-8 py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mx-40">
+            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 rounded-lg blur opacity-75 animate-pulse mx-10"></div>
+            <button className="relative bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 text-white px-8 py-4 rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 mx-40">
               Book Your Demo Today
             </button>
           </div>
