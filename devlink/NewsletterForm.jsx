@@ -33,7 +33,7 @@ export function NewsletterForm({
           className={_utils.cx(_styles, "h-wrapper", "is-footer")}
           tag="div"
         >
-          <_Builtin.Heading tag="h3">
+          <_Builtin.Heading tag="h4">
             {"Access exclusive content"}
           </_Builtin.Heading>
         </_Builtin.Block>

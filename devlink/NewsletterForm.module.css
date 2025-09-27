@@ -55,6 +55,7 @@
 
 .footer_inner-grid.is-cta {
   display: flex;
+  max-height: 325px;
   padding: 4rem;
   justify-content: space-between;
   align-items: flex-end;
@@ -64,6 +65,8 @@
   grid-template-rows: auto;
 
   border-radius: 0.75rem;
+
+  background-color: #080410;
 }
 
 @media screen and (max-width: 767px) {
@@ -717,7 +720,9 @@
 }
 
 .is-body-s {
-  font-size: 1.125rem;
+  color: var(--color-primary--light-grey);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .is-white-opacity-0-6 {

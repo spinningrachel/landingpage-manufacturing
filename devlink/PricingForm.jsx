@@ -1,15 +1,17 @@
 "use client";
 import React from "react";
 import * as _Builtin from "./_Builtin";
+import * as _utils from "./utils";
+import _styles from "./PricingForm.module.css";
 
 export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
   return (
     <_Component>
       <_Builtin.FormForm
-        name="wf-form-Get-Pricing-Form"
-        data-name="Get Pricing Form"
+        name="wf-form-PricingForm"
+        data-name="PricingForm"
         method="get"
-        id="wf-form-Get-Pricing-Form"
+        id="wf-form-PricingForm"
       >
         <_Builtin.FormBlockLabel htmlFor="name">
           {"Name"}
@@ -53,8 +55,54 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
           autoFocus={false}
           id="Company-website-URL"
         />
+        <_Builtin.FormBlockLabel htmlFor="Which-KPI-matters-most-for-you-right-now">
+          {"Which KPI matters most for you right now?"}
+        </_Builtin.FormBlockLabel>
+        <_Builtin.FormSelect
+          name="Which-KPI-matters-most-for-you-right-now"
+          data-name="Which KPI matters most for you right now?"
+          required={false}
+          multiple={true}
+          id="Which-KPI-matters-most-for-you-right-now"
+          options={[
+            {
+              t: "Yield",
+              v: "Yield",
+            },
+            {
+              t: "Downtime",
+              v: "Downtime",
+            },
+            {
+              t: "Defect rate",
+              v: "Defect rate",
+            },
+            {
+              t: "Compliance",
+              v: "Compliance",
+            },
+            {
+              t: "Ability to scale current operations",
+              v: "Ability to scale current operations",
+            },
+            {
+              t: "Production reliability",
+              v: "Production reliability",
+            },
+            {
+              t: "All of the above",
+              v: "All of the above",
+            },
+            {
+              t: "Other",
+              v: "Other",
+            },
+          ]}
+        />
         <_Builtin.FormBlockLabel htmlFor="Reason-for-meeting">
-          {"What will we talk about?"}
+          <_Builtin.Strong>
+            {"What’s your biggest quality or inspection challenge today?"}
+          </_Builtin.Strong>{" "}
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextarea
           name="Reason-for-meeting"
@@ -66,6 +114,7 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
           id="Reason-for-meeting"
         />
         <_Builtin.FormButton
+          className={_utils.cx(_styles, "submit-button")}
           type="submit"
           value="Submit"
           data-wait="Please wait..."

@@ -2,7 +2,7 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
 import * as _interactions from "./interactions";
-import { NavBlockMenus } from "./NavBlockMenus";
+import { NavBlock } from "./NavBlock";
 import * as _utils from "./utils";
 import _styles from "./Nav.module.css";
 
@@ -52,15 +52,7 @@ export function Nav({
           </_Builtin.Block>
         </_Builtin.Block>
       </_Builtin.Block>
-      <NavBlockMenus
-        navLogoVisibility={navLogoVisibility}
-        pricingLinkVisibility={pricingLinkVisibility}
-        docsLinkVisibility={docsLinkVisibility}
-        blogLinkVisibility={blogLinkVisibility}
-        signInLinkVisibility={signInLinkVisibility}
-        getADemoVisibility={getADemoVisibility}
-        startForFreeVisibility={startForFreeVisibility}
-      />
+      <NavBlock navLogoVisibility={navLogoVisibility} />
     </_Component>
   );
 }

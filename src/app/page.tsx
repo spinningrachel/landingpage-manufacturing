@@ -1,8 +1,7 @@
 'use client';
 
 import { PricingForm } from '@/components/devlink/PricingForm';
-import { NavBlockMenus } from '../../devlink/NavBlockMenus';
-import { NewsletterForm } from '../../devlink/NewsletterForm';
+import { NavBlockNoMenu } from '../../devlink/NavBlockNoMenu';
 import dynamic from 'next/dynamic';
 
 const Footer = dynamic(() => import('../../devlink/Footer').then(mod => ({ default: mod.Footer })), {
@@ -13,9 +12,7 @@ export default function App() {
   return (
     
     <div className="min-h-screen bg-white font-sans">
-      <section>
-        <NavBlockMenus />
-      </section>
+      <NavBlockNoMenu />
       {/* Hero Section */}
       <section style={{ backgroundColor: 'rgb(14, 0, 34)', padding: '80px 0px' }}>
         <div className="linear-gradient">
@@ -23,18 +20,17 @@ export default function App() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Column - Headlines */}
               <div>
+
               <h1 style={{ color: 'white' }}>
                 <span className="font-light">Achieve{" "}
-                <span className="bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 bg-clip-text text-transparent">
+                <span className="font-extrabold bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 bg-clip-text text-transparent">
                   90% Better
                 </span>{" "}
                 Defect Detection</span>
               </h1>
-              <h2 className="text-white mb-4">
-               <span className="font-semibold">In Days</span> <span className="font-light">, Not Months</span>
-              </h2>
+              <h2 className="text-white mb-10 mt-5"><span className="font-black ">In Days</span>, Not Months</h2>
                 <p className="text-white leading-relaxed mb-8">
-                Visual Layer turns raw inspection data into ROI-driven models that work in live production.
+                  Visual Layer transforms noisy inspection data into production-ready AI models that deliver measurable ROI on the factory floor.
                 </p>
 
               {/* Feature Points */}
@@ -48,7 +44,7 @@ export default function App() {
                   <div>
                     <h4 className="text-white mb-1">DATA QUALITY FIRST</h4>
                     <p className="text-white mb-2">
-                      Curates and validates data, uncovers unseen defects, and keeps results production-ready.
+                      Automatically curates and validates inspection data, exposing hidden defects and ensuring every result is production-ready.
                     </p>
                   </div>
                 </div>
@@ -62,7 +58,7 @@ export default function App() {
                   <div>
                     <h4 className="text-white mb-1">RAPID DEPLOYMENT</h4>
                     <p className="text-white mb-2">
-                      Accelerate model training and retraining in days instead of months with models that actually work.
+                      Deploy and retrain AI models in days, not months—built to succeed in live production, not stall in pilot purgatory.
                     </p>
                   </div>
                 </div>
@@ -76,7 +72,7 @@ export default function App() {
                   <div>
                     <h4 className="text-white mb-1">CPU-FIRST PLATFORM</h4>
                     <p className="text-white mb-2">
-                      Get up and running on standard hardware for ingestion and indexing, with optimized infrastructure and minimal GPU dependency.
+                      Run at scale on standard CPUs with minimal GPU reliance—proven to process thousands of inspection hours daily at a fraction of the cost.
                     </p>
                   </div>
                 </div>
@@ -124,7 +120,7 @@ export default function App() {
               Why Manufacturing Teams Partner With <span className="font-bold bg-gradient-to-r from-purple-600 via-blue-700 to-green-600 bg-clip-text text-transparent">Visual Layer</span>
             </h2>
             <p className="text-gray-600">
-              Transform your quality control with AI that actually works in production environments
+              Transform quality control with AI engineered for production—delivering higher yield, lower costs, and immediate operational impact.
             </p>
           </div>
 
@@ -240,7 +236,7 @@ export default function App() {
                 Proven ROI for Manufacturing
             </h2>
               <p className="max-w-3xl mx-auto">
-                Our customers see immediate impact on their bottom line with measurable improvements across all key metrics
+                Manufacturers see immediate ROI: lower inspection costs, faster throughput, and accuracy rates 10x higher than manual review—validated by Fortune 10 and aerospace leaders.
               </p>
             </div>
 
@@ -293,20 +289,35 @@ export default function App() {
 
       {/* Final CTA */}
       <section className="py-20  bg-gray-100">
-        <div className="max-w-4xl mx-auto text-center px-6">
-          <h2 className="text-gray-900 mb-6">
-            Ready to Transform Your Manufacturing Quality Control?
-          </h2>
-          <p className=" text-gray-600 mb-8 leading-relaxed">
-            Join hundreds of manufacturers already using Visual Layer to improve their defect detection and streamline their production processes.
-          </p>
-          
+        <div className="max-w-7xl mb-10 mt-auto ml-auto mr-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Form */}
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 to-green-300 rounded-2xl blur opacity-75"></div>
+              <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
+                <h4 className="text-gray-900 mb-6">Get Started Today</h4>
+                <p className="text-gray-600 mb-6">Send us your details, and we'll get back to you to schedule a personalized demo.</p>
+                <PricingForm />
+              </div>
+            </div>
+
+            {/* Right Column - Content */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-gray-900 mb-6">
+                Ready to Transform Your Manufacturing Quality Control?
+              </h2>
+              <p className=" text-gray-600 mb-8 leading-relaxed">
+                Join hundreds of manufacturers already using Visual Layer to improve their defect detection and streamline their production processes.
+              </p>
+            </div>
+          </div>
         </div>
         <section className="rounded-xl " style={{ backgroundColor: 'rgb(14, 0, 34)', paddingTop: '20px'}}>
           <div className="bg-white rounded-2xl " style={{ height: '100%', maxWidth: '1600px', marginLeft: 'auto', marginRight: 'auto' }}>
 
           <Footer />
           </div>
+          
       </section>
       </section>
     </div>

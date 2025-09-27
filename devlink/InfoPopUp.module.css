@@ -424,7 +424,9 @@
 }
 
 .is-body-s {
-  font-size: 1.125rem;
+  color: var(--color-primary--light-grey);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .is-white-opacity-0-6 {

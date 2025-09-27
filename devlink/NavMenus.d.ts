@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Types from "./types";
 
-declare function NavBlockMenus(props: {
+declare function NavMenus(props: {
   as?: React.ElementType;
   navLogoVisibility?: Types.Visibility.VisibilityConditions;
   pricingLinkVisibility?: Types.Visibility.VisibilityConditions;
