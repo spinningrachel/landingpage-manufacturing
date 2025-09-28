@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import userConfig from './clouduser.next.config';
+import userConfig from './clouduser.next.config.js';
 
 const webflowOverrides: NextConfig = {
   basePath: '/manufacturing',

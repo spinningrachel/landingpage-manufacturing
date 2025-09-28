@@ -172,7 +172,7 @@ export function NewsletterForm({
             name="Form"
             action="https://hubspotonwebflow.com/api/forms/8e60c115-335e-4a35-9e78-80edbaadf2dc"
             method="POST"
-            enctype="multipart/form-data"
+            encType="multipart/form-data"
             data-name="Newsletter subscription"
             data-wf-hs-form="webflowHubSpotForm"
             data-wf-page-id="66603dc4a8308da80ba98fa3"
@@ -196,7 +196,7 @@ export function NewsletterForm({
                 slot=""
                 type="email"
                 name="email"
-                required="true"
+                required={true}
                 id="email"
                 placeholder="E-mail address"
               />

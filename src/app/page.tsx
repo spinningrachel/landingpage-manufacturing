@@ -318,9 +318,10 @@ export default function App() {
             
           </div>
         </div>
-
+        <Footer />
       </section>
-      <Footer />
+      
     </div>
+    
   )
 }
