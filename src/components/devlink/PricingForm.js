@@ -1,15 +1,17 @@
 "use client";
 import React from "react";
-import * as _Builtin from "./_Builtin";
+import * as _Builtin from "../../../devlink/_Builtin";
+import * as _utils from "../../../devlink/utils";
+import _styles from "../../../devlink/PricingForm.module.css";
 
 export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
   return (
     <_Component>
       <_Builtin.FormForm
-        name="wf-form-Get-Pricing-Form"
-        data-name="Get Pricing Form"
+        name="wf-form-PricingForm"
+        data-name="PricingForm"
         method="get"
-        id="wf-form-Get-Pricing-Form"
+        id="wf-form-PricingForm"
       >
         <_Builtin.FormBlockLabel htmlFor="name">
           {"Name"}
@@ -53,8 +55,11 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
           autoFocus={false}
           id="Company-website-URL"
         />
+
         <_Builtin.FormBlockLabel htmlFor="Reason-for-meeting">
-          {"What will we talk about?"}
+          <_Builtin.Strong>
+            {"What’s your biggest quality or inspection challenge today?"}
+          </_Builtin.Strong>{" "}
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextarea
           name="Reason-for-meeting"
@@ -66,6 +71,7 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
           id="Reason-for-meeting"
         />
         <_Builtin.FormButton
+          className={_utils.cx(_styles, "submit-button")}
           type="submit"
           value="Submit"
           data-wait="Please wait..."
@@ -95,3 +101,4 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
     </_Component>
   );
 }
+

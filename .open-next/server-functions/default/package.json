@@ -10,15 +10,16 @@
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "1.6.5",
     "next": "15.5.4",
     "react": "^18",
-    "react-dom": "^18",
-    "@opennextjs/cloudflare": "1.6.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@webflow/webflow-cli": "^1.8.44",
     "autoprefixer": "^10.4.20",
     "eslint": "^8",
     "eslint-config-next": "15.5.4",

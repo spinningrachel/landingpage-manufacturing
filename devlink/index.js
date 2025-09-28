@@ -20,6 +20,7 @@ export * from "./Footer";
 export * from "./FooterLink";
 export * from "./FooterLinkGrey";
 export * from "./FooterMenuTitle";
+export * from "./FooterNoNewsletter";
 export * from "./GlobalCustomCode";
 export * from "./HeaderStructure";
 export * from "./InfoPopUp";

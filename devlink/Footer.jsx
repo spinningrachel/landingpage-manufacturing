@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import * as _Builtin from "./_Builtin";
-import { NewsletterForm } from "./NewsletterForm";
 import { FooterMenuTitle } from "./FooterMenuTitle";
 import { FooterLink } from "./FooterLink";
 import { FooterLinkGrey } from "./FooterLinkGrey";
@@ -99,7 +98,6 @@ export function Footer({
           className={_utils.cx(_styles, "footer_main-grid")}
           tag="div"
         >
-          <NewsletterForm newsletterVisibility={newsletterVisibility} />
           <_Builtin.Block
             className={_utils.cx(_styles, "footer_inner-grid", "is-top")}
             id={_utils.cx(

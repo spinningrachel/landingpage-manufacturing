@@ -303,23 +303,24 @@ export default function App() {
 
             {/* Right Column - Content */}
             <div className="text-center lg:text-left">
+
               <h2 className="text-gray-900 mb-6">
                 Ready to Transform Your Manufacturing Quality Control?
               </h2>
+
               <p className=" text-gray-600 mb-8 leading-relaxed">
                 Join hundreds of manufacturers already using Visual Layer to improve their defect detection and streamline their production processes.
               </p>
+                                          <div className="mb-6">
+                <img src="https://cdn.prod.website-files.com/66603dc3a8308da80ba98f5e/68d6ef63f37f1af593bbee9e_vlb-explore-manufacturing3.png" alt="Visual Layer Demo" className="mx-auto lg:mx-0" />
+              </div>
             </div>
+            
           </div>
         </div>
-        <section className="rounded-xl " style={{ backgroundColor: 'rgb(14, 0, 34)', paddingTop: '20px'}}>
-          <div className="bg-white rounded-2xl " style={{ height: '100%', maxWidth: '1600px', marginLeft: 'auto', marginRight: 'auto' }}>
 
-          <Footer />
-          </div>
-          
       </section>
-      </section>
+      <Footer />
     </div>
   )
 }
