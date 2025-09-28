@@ -1,5 +1,33 @@
 import * as React from "react";
+import * as Types from "./types";
 
 declare function FooterNoNewsletter(props: {
   as?: React.ElementType;
+  footerLogoVisibility?: Types.Visibility.VisibilityConditions;
+  footerLogoLink?: Types.Basic.Link;
+  twitterLinkVisibility?: Types.Visibility.VisibilityConditions;
+  twitterLinkUrl?: Types.Basic.Link;
+  instagramLinkVisibility?: Types.Visibility.VisibilityConditions;
+  instagramLinkUrl?: Types.Basic.Link;
+  youTubeLinkVisibility?: Types.Visibility.VisibilityConditions;
+  youTubeLinkUrl?: Types.Basic.Link;
+  linkedInLinkVisibility?: Types.Visibility.VisibilityConditions;
+  linkedInLinkUrl?: Types.Basic.Link;
+  privacyLinkVisibility?: Types.Visibility.VisibilityConditions;
+  privacyLinkUrl?: Types.Basic.Link;
+  privacyLinkText?: React.ReactNode;
+  toULinkVisibility?: Types.Visibility.VisibilityConditions;
+  toULinkUrl?: Types.Basic.Link;
+  toULinkText?: React.ReactNode;
+  cookieLinkVisibility?: Types.Visibility.VisibilityConditions;
+  cookieLinkUrl?: Types.Basic.Link;
+  cookieLinkText?: React.ReactNode;
+  discordVisibility?: Types.Visibility.VisibilityConditions;
+  discordLinkUrl?: Types.Basic.Link;
+  githubVisibility?: Types.Visibility.VisibilityConditions;
+  githubLinkUrl?: Types.Basic.Link;
+  emailVisibility?: Types.Visibility.VisibilityConditions;
+  emailUrl?: Types.Basic.Link;
+  emailText?: React.ReactNode;
+  newsletterVisibility?: Types.Visibility.VisibilityConditions;
 }): React.JSX.Element;

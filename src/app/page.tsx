@@ -2,6 +2,7 @@
 
 import { PricingForm } from '@/components/devlink/PricingForm';
 import { NavBlockNoMenu } from '../../devlink/NavBlockNoMenu';
+import { Footer } from '../../devlink/Footer';
 import dynamic from 'next/dynamic';
 
 const Footer = dynamic(() => import('../../devlink/Footer').then(mod => ({ default: mod.Footer })), {
@@ -317,8 +318,9 @@ export default function App() {
             </div>
             
           </div>
+                  <Footer />
         </div>
-        <Footer />
+
       </section>
       
     </div>

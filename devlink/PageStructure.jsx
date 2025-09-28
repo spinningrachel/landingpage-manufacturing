@@ -3,7 +3,7 @@ import React from "react";
 import * as _Builtin from "./_Builtin";
 import { GlobalCustomCode } from "./GlobalCustomCode";
 import { Nav } from "./Nav";
-import { Footer } from "./Footer";
+import { FooterNoNewsletter } from "./FooterNoNewsletter";
 import * as _utils from "./utils";
 import _styles from "./PageStructure.module.css";
 
@@ -42,7 +42,7 @@ export function PageStructure({ as: _Component = _Builtin.Block }) {
           </_Builtin.Block>
         </_Builtin.Section>
       </_Builtin.Block>
-      <Footer />
+      <FooterNoNewsletter />
     </_Component>
   );
 }
