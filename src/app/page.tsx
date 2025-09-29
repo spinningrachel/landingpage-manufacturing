@@ -2,7 +2,7 @@
 
 import { PricingForm } from '@/components/devlink/PricingForm';
 import { NavBlockNoMenu } from '../../devlink/NavBlockNoMenu';
-import { Footer } from '../../devlink/Footer';
+import { FooterNoNewsletter } from '../../devlink/FooterNoNewsletter';
 import dynamic from 'next/dynamic';
 
 const Footer = dynamic(() => import('../../devlink/Footer').then(mod => ({ default: mod.Footer })), {
@@ -22,61 +22,54 @@ export default function App() {
               {/* Left Column - Headlines */}
               <div>
 
-              <h1 style={{ color: 'white' }}>
-                <span className="font-light">Achieve{" "}
-                <span className="font-extrabold bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 bg-clip-text text-transparent">
-                  90% Better
-                </span>{" "}
-                Defect Detection</span>
+              <h1 className="text-[46px]"><span className="font-thin text-white">From Impossible Inspection Workloads to </span><span className="font-bold bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 bg-clip-text text-transparent">Actionable Intelligence</span>
               </h1>
-              <h2 className="text-white mb-10 mt-5"><span className="font-black ">In Days</span>, Not Months</h2>
-                <p className="text-white leading-relaxed mb-8">
-                  Visual Layer transforms noisy inspection data into production-ready AI models that deliver measurable ROI on the factory floor.
+              <h2 className="!text-[26px] mt-5 mb-5 text-white !font-extrathin leading-[1.4]">Achieve 90% Better Defect Detection <span className="!font-extrabold"> In Days</span>, Not Months</h2>
+                <p className="text-white text-2xl font-light  mb-8">
                 </p>
-
               {/* Feature Points */}
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 stroke-white flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-white mb-1">DATA QUALITY FIRST</h4>
+                    <h4 className="text-white mb-1">DAYS NOT MONTHS</h4>
                     <p className="text-white mb-2">
-                      Automatically curates and validates inspection data, exposing hidden defects and ensuring every result is production-ready.
+                      Visual Layer gives manufacturers the foundation to turn overwhelming inspection data into a strategic advantage.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-10">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-white mb-1">FROM BEFORE TO AFTER</h4>
+                    <p className="text-white mb-2">
+                      Visual Layer automates indexing and search to deliver insights and measurable ROI in a flash.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 stroke-white flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-white mb-1">RAPID DEPLOYMENT</h4>
+                    <h4 className="text-white mb-1">ENTERPRISE SCALE AND PRODUCTION READY</h4>
                     <p className="text-white mb-2">
-                      Deploy and retrain AI models in days, not months—built to succeed in live production, not stall in pilot purgatory.
+                      Visual Layer scales with you from proof-of-concept to petabyte production.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 stroke-white flex items-center justify-center mt-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-white mb-1">CPU-FIRST PLATFORM</h4>
-                    <p className="text-white mb-2">
-                      Run at scale on standard CPUs with minimal GPU reliance—proven to process thousands of inspection hours daily at a fraction of the cost.
-                    </p>
-                  </div>
-                </div>
               </div>
 
               {/* Industry Recognition */}
@@ -86,13 +79,13 @@ export default function App() {
                   <div className="relative">
                     <div className="absolute -inset-px bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 rounded-lg"></div>
                     <div className="relative px-4 py-2 rounded-lg text-white" style={{ backgroundColor: 'rgb(14, 0, 34)' }}>
-                      Apple Partners
+                      Apple Partners and
                     </div>
                   </div>
                   <div className="relative">
                     <div className="absolute -inset-px bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 rounded-lg"></div>
                     <div className="relative px-4 py-2 rounded-lg text-white" style={{ backgroundColor: 'rgb(14, 0, 34)' }}>
-                      Trusted by Fortune 10 Companies
+                      Fortune 10 Companies
                     </div>
                   </div>
                 </div>
@@ -103,7 +96,7 @@ export default function App() {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 to-green-300 rounded-2xl blur opacity-75"></div>
                 <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
-                  <h4 className="text-gray-900 mb-6">See Visual Layer in Action</h4>
+                  <h4 className="text-darkgray text-lg font-extrabold mb-6">See Visual Layer in Action</h4>
                   <p className="text-gray-600 mb-6">Send us your details, and we'll get back to you to schedule a personalized demo.</p>
                   <PricingForm />
                 </div>
@@ -134,9 +127,10 @@ export default function App() {
 </svg>
 
               </div>
-              <h4 className="mb-4">Lightning Fast Deployment</h4>
+              <h4 className="mb-4">Seamless Integration</h4>
               <p className="text-gray-600 leading-relaxed">
-                Deploy production-ready defect detection in days, not months. Our AI learns from your existing data instantly.
+                
+Connect instantly and integrate with existing cameras and inspection systems without disruption.
               </p>
             </div>
 
@@ -148,9 +142,10 @@ export default function App() {
 </svg>
 
               </div>
-              <h4 className="text-gray-900 mb-4">Superior Accuracy</h4>
+              <h4 className="text-gray-900 mb-4">Intelligence in Motion</h4>
               <p className="text-gray-600 leading-relaxed">
-                Achieve 10x better defect detection compared to traditional methods. Reduce false positives dramatically.
+                
+Continuously analyze production images in near real-time, detecting defects and surfacing critical insights.
               </p>
             </div>
 
@@ -162,9 +157,9 @@ export default function App() {
 </svg>
 
               </div>
-              <h4 className="text-gray-900 mb-4">Production Ready</h4>
-              <p className="text-gray-600 leading-relaxed">
-                Seamlessly integrate with your existing production line. Real-time processing with enterprise-grade reliability.
+              <h4 className="text-gray-900 mb-4">Insights at Scale</h4>
+              <p className="text-gray-600 leading-relaxed">                
+              Uncover patterns and trends, and export high-quality data into training pipelines, or downstream analytics.
               </p>
             </div>
           </div>
@@ -172,57 +167,63 @@ export default function App() {
       </section>
 
       {/* Product Demo */}
-      <section className="py-20  bg-gray-100">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-gray-900 mb-6">
-                See Visual Layer in Action
+              <h2 className="mt-5 mb-5 !font-extrathin leading-[1.4]">
+                From Impossible Workloads to Actionable Workflows
               </h2>
-              <p className=" text-gray-600 mb-8 leading-relaxed">
-                Watch how our AI identifies defects with precision that exceeds human inspection capabilities while maintaining production line speed.
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                Three easy steps move manufacturers from data overload to measurable impact:
               </p>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-gray-900 mb-2">Real-time Detection</h5>
-                    <p className="text-gray-600">Identify defects as products move through your production line with sub-second processing times</p>
+                    <h5 className="text-gray-900 mb-2">Unlock</h5>
+                    <p className="text-gray-600">Make massive visual datasets usable and searchable.</p>
                   </div>
                 </div>
+
                 <div className="flex items-start gap-4">
                   <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-gray-900 mb-2">Detailed Analytics</h5>
-                    <p className="text-gray-600">Get insights on defect patterns and quality trends over time with comprehensive reporting</p>
+                    <h5 className="text-gray-900 mb-2">Discover</h5>
+                    <p className="text-gray-600">Find the needle in the haystack in seconds, uncovering insights at scale.</p>
                   </div>
                 </div>
+
                 <div className="flex items-start gap-4">
                   <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-10">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-gray-900 mb-2">Easy Integration</h5>
-                    <p className="text-gray-600">Connect with your existing cameras and inspection systems without disrupting operations</p>
+                    <h5 className="text-gray-900 mb-2">Automate</h5>
+                    <p className="text-gray-600">Eliminate manual work with reliable automation, saving time and cost.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <img src="https://cdn.prod.website-files.com/66603dc3a8308da80ba98f5e/68d6ef63e69f7a62f2af78b0_vlb-explore-manufacturing.png"></img>
-            </div>
+              <img
+              className="w-xl"
+              src="https://cdn.prod.website-files.com/66603dc3a8308da80ba98f5e/68d95660b8e5d7f8e8312180_vlb-explore-manufacturing5.png"
+              alt="Visual Layer Welding Dataset"
+/>
+              </div>
           </div>
         </div>
       </section>
@@ -236,51 +237,45 @@ export default function App() {
               <h2 className="mb-4">
                 Proven ROI for Manufacturing
             </h2>
-              <p className="max-w-3xl mx-auto">
-                Manufacturers see immediate ROI: lower inspection costs, faster throughput, and accuracy rates 10x higher than manual review—validated by Fortune 10 and aerospace leaders.
+              <p className="text-lg max-w-3xl mx-auto">
+                Our customers report immediate ROI: from double‑digit cost savings to faster throughput and significant accuracy improvements.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-</svg>
-
+              {/* Up to 30%+ Lower Quality Control Costs */}
+              <div className="text-center">
+                <span className="block text-sm font-semibold mb-2 invisible">Up to</span>
+                <div className="w-32 h-32 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-3xl font-bold">+25%</span>
+                </div>
+                <h4 className="font-bold mb-3">Reduction in Quality Control Costs</h4>
+                <p className="text-gray-900 leading-relaxed">
+                  Reduce inspection costs and minimize waste from undetected defects across the production line.
+                </p>
               </div>
-              <div className="text-5xl mb-2">40%</div>
-              <div className=" mb-3">Cost Reduction</div>
-              <p className="text-gray-900 leading-relaxed">
-                Reduce inspection costs and minimize waste from undetected defects across your production line
-              </p>
-            </div>
 
-            <div className="text-center">
-              <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-</svg>
-
+              {/* Up to 5× Faster Model Development */}
+              <div className="text-center">
+                <span className="block text-sm font-semibold mb-2">Up to</span>
+                <div className="w-32 h-32 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-3xl font-bold">5×</span>
+                </div>
+                <h4 className="font-bold mb-3">Faster Model Development</h4>
+                <p className="text-gray-900 leading-relaxed">
+                  Accelerate AI model training and deployment cycles—cutting timelines from months to weeks.
+                </p>
               </div>
-              <div className="text-5xl mb-2">60%</div>
-              <div className=" mb-3">Faster Processing</div>
-              <p className="text-gray-900 leading-relaxed">
-                Accelerate quality control processes without compromising accuracy or reliability
-              </p>
-            </div>
 
-            <div className="text-center">
-              <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
-</svg>
-
-              </div>
-              <div className="text-5xl mb-2">10x</div>
-              <div className=" mb-3">Better Accuracy</div>
-              <p className="text-gray-900 leading-relaxed">
-                  Catch defects that human inspectors miss consistently with AI-powered precision
+              {/* Up to 90–95% Manual Review Savings */}
+              <div className="text-center">
+                <span className="block text-sm font-semibold mb-2">Up to</span>
+                <div className="w-32 h-32 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-3xl font-bold">95%</span>
+                </div>
+                <h4 className="font-bold mb-3">Higher Accuracy</h4>
+                <p className="text-gray-900 leading-relaxed">
+                  Automation with human-in-the-loop maintains accuracy and closes feedback loops fast.
                 </p>
               </div>
             </div>
@@ -296,7 +291,7 @@ export default function App() {
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 to-green-300 rounded-2xl blur opacity-75"></div>
               <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
-                <h4 className="text-gray-900 mb-6">Get Started Today</h4>
+                <h4 className="text-darkgray font-extrabold text-lg mb-6">Get Started Today</h4>
                 <p className="text-gray-600 mb-6">Send us your details, and we'll get back to you to schedule a personalized demo.</p>
                 <PricingForm />
               </div>
@@ -306,21 +301,22 @@ export default function App() {
             <div className="text-center lg:text-left">
 
               <h2 className="text-gray-900 mb-6">
-                Ready to Transform Your Manufacturing Quality Control?
+                Transform Your  Quality Control
               </h2>
 
-              <p className=" text-gray-600 mb-8 leading-relaxed">
-                Join hundreds of manufacturers already using Visual Layer to improve their defect detection and streamline their production processes.
-              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Adopters of Visual Layer move fast with accurate, scalable, cost-efficient and unified workflows. 
+              <span className="block mt-2 font-semibold text-purple-600">Don’t be left behind.</span>
+            </p>
                                           <div className="mb-6">
-                <img src="https://cdn.prod.website-files.com/66603dc3a8308da80ba98f5e/68d6ef63f37f1af593bbee9e_vlb-explore-manufacturing3.png" alt="Visual Layer Demo" className="mx-auto lg:mx-0" />
+                <img src="https://cdn.prod.website-files.com/66603dc3a8308da80ba98f5e/68d953ad20210cfdb85d8e30_vlb-explore-manufacturing4.png" alt="Visual Layer Dataset for Model Training" className="mx-auto lg:mx-0" />
               </div>
             </div>
             
           </div>
-                  <Footer />
+                  
         </div>
-
+        <FooterNoNewsletter />
       </section>
       
     </div>
