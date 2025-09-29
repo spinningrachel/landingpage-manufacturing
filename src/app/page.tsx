@@ -172,7 +172,7 @@ Continuously analyze production images in near real-time, detecting defects and 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="mt-5 mb-5 !font-extrathin leading-[1.4]">
-                From Impossible Workloads to Actionable Workflows
+                Smarter Workflows in Three Steps
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Three easy steps move manufacturers from data overload to measurable impact:
