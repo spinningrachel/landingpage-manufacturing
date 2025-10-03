@@ -7,6 +7,7 @@ import _styles from "./NewsletterForm.module.css";
 export function NewsletterForm({
   as: _Component = _Builtin.Block,
   newsletterVisibility = true,
+  runtimeProps = {},
 }) {
   return newsletterVisibility ? (
     <_Component
@@ -56,11 +57,11 @@ export function NewsletterForm({
         >
           <_Builtin.FormForm
             className={_utils.cx(_styles, "newsletter_form")}
-            name="wf-form-Newsletter-Form"
-            data-name="Newsletter Form"
+            name="wf-form-NewsletterForm"
+            data-name="NewsletterForm"
             method="get"
             data-webflow-hubspot-api-form-url="https://hubspotonwebflow.com/api/forms/ad6bbbcb-4f24-4cbb-850a-71f0ed141224"
-            id="wf-form-Newsletter-Form"
+            id="wf-form-NewsletterForm"
           >
             <_Builtin.FormTextInput
               className={_utils.cx(_styles, "newsletter_form-field")}
@@ -81,6 +82,7 @@ export function NewsletterForm({
               value="Sign up"
               data-wait="Please wait..."
               ph-track-button="submit"
+              {...runtimeProps}
             />
             <_Builtin.DOM
               tag="input"
@@ -122,9 +124,7 @@ export function NewsletterForm({
             className={_utils.cx(_styles, "hs-newsletter_success-message")}
           >
             <_Builtin.Block tag="div">
-              {
-                "Thanks for signing up, we're so happy to have you on board! Don't hesitate to get in touch if you have any questions.We'll always get back to you."
-              }
+              {"Thanks for signing up, we're so happy to have you on board! "}
             </_Builtin.Block>
           </_Builtin.FormSuccessMessage>
           <_Builtin.FormErrorMessage

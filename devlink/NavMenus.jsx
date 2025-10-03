@@ -604,7 +604,6 @@ export function NavMenus({
               block=""
               options={{
                 href: "https://app.visual-layer.com/free-trial",
-                target: "_blank",
               }}
             >
               {"Get a free trial"}

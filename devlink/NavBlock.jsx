@@ -27,7 +27,7 @@ export function NavBlock({
           value="%3Cstyle%3E%0A%2F*%20%40media%20only%20screen%20and%20(min-width%3A%201040px)%20and%20(max-width%3A%201300px)%20%20%7B%0A.nav_menu-list%20%7B%0Ajustify-content%3A%20start%3B%0Apadding-left%3A12rem%3B%0A%7D%0A%7D*%2F%0A%40media%20only%20screen%20and%20(min-width%3A%20991px)%20and%20(max-width%3A%201039px)%20%20%7B%0A%2F*%20.nav_menu-list%20%7B%0Ajustify-content%3A%20start%3B%0Apadding-left%3A12rem%3B%0A%7D%20*%2F%0A.nav_link%20%7B%0Afont-size%3A0.875rem%3B%0A%7D%0A.nav_dropdown-toggle%20%7B%0Afont-size%3A0.875rem%3B%0A%7D%0A%7D%0A%3C%2Fstyle%3E"
         />
         <_Builtin.Block className={_utils.cx(_styles, "nav_layout")} tag="div">
-          <NavMenus />
+          <NavMenus startForFreeVisibility={true} getADemoVisibility={true} />
           <_Builtin.Link
             className={_utils.cx(_styles, "nav_logo-link")}
             button={false}

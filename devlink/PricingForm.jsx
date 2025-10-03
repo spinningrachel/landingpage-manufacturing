@@ -4,19 +4,28 @@ import * as _Builtin from "./_Builtin";
 import * as _utils from "./utils";
 import _styles from "./PricingForm.module.css";
 
-export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
+export function PricingForm({
+  as: _Component = _Builtin.FormWrapper,
+  formProps = {},
+}) {
   return (
-    <_Component className={_utils.cx(_styles, "form-block-2")}>
+    <_Component className={_utils.cx(_styles, "form-block-2")} id="PricingForm">
       <_Builtin.FormForm
+        className={_utils.cx(_styles, "form")}
         name="wf-form-PricingForm"
         data-name="PricingForm"
         method="get"
         id="wf-form-PricingForm"
+        {...formProps}
       >
-        <_Builtin.FormBlockLabel htmlFor="name">
+        <_Builtin.FormBlockLabel
+          className={_utils.cx(_styles, "field-label")}
+          htmlFor="name"
+        >
           {"Name"}
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextInput
+          className={_utils.cx(_styles, "text-field-3")}
           name="name"
           maxLength={256}
           data-name="Name"
@@ -27,10 +36,14 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
           autoFocus={false}
           id="name"
         />
-        <_Builtin.FormBlockLabel htmlFor="email">
+        <_Builtin.FormBlockLabel
+          className={_utils.cx(_styles, "field-label-2")}
+          htmlFor="email"
+        >
           {"Email address"}
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextInput
+          className={_utils.cx(_styles, "text-field-2")}
           name="email"
           maxLength={256}
           data-name="Email"
@@ -41,10 +54,14 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
           autoFocus={false}
           id="email"
         />
-        <_Builtin.FormBlockLabel htmlFor="Company-website-URL">
+        <_Builtin.FormBlockLabel
+          className={_utils.cx(_styles, "field-label-3")}
+          htmlFor="Company-website-URL"
+        >
           {"Your company website (URL)"}
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextInput
+          className={_utils.cx(_styles, "text-field")}
           name="field"
           maxLength={256}
           data-name="Field"
@@ -55,12 +72,16 @@ export function PricingForm({ as: _Component = _Builtin.FormWrapper }) {
           autoFocus={false}
           id="Company-website-URL"
         />
-        <_Builtin.FormBlockLabel htmlFor="Reason-for-meeting">
-          <_Builtin.Strong>
-            {"What’s your biggest quality or inspection challenge today?"}
+        <_Builtin.FormBlockLabel
+          className={_utils.cx(_styles, "field-label-4")}
+          htmlFor="Reason-for-meeting"
+        >
+          <_Builtin.Strong className={_utils.cx(_styles, "bold-text")}>
+            {"What’s your biggest visual data challenge today?"}
           </_Builtin.Strong>{" "}
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextarea
+          className={_utils.cx(_styles, "textarea")}
           name="Reason-for-meeting"
           maxLength={5000}
           data-name="Reason for meeting"

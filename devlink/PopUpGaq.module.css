@@ -8,6 +8,7 @@
 
   display: none;
   overflow: auto;
+  height: 100%;
   padding: 3rem;
   justify-content: center;
   align-items: stretch;
@@ -35,6 +36,7 @@
   display: grid;
   overflow: hidden;
   max-width: 83rem;
+  min-height: 100%;
   grid-auto-columns: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -79,7 +81,7 @@
 
 .popup_left-top {
   display: flex;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 1rem;
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -131,8 +133,9 @@
 }
 
 .is-body-l {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.4;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -203,7 +206,7 @@
 .popup_maruqq-title {
   display: flex;
   width: 100%;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0rem;
   justify-content: center;
   align-items: center;
 
@@ -242,6 +245,8 @@
 
 .marquee_layout.is-logos {
   overflow: hidden;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 .marquee_layout.is-testimonials {
@@ -328,20 +333,20 @@
   }
 }
 
-.is-h2 {
+.is-h3 {
   font-family: 'DM Sans';
   font-size: 3.5rem;
   line-height: 1;
 }
 
 @media screen and (max-width: 767px) {
-  .is-h2 {
+  .is-h3 {
     font-size: 2.25rem;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .is-h2.is-count {
+  .is-h3.is-count {
     font-size: 1.375rem;
   }
 }
@@ -350,7 +355,7 @@
   text-align: center;
 }
 
-.is-h2.is-txt-white {
+.is-h3.is-txt-white {
   color: var(--color-primary--white);
 }
 

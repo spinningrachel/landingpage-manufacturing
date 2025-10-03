@@ -1,0 +1,69 @@
+# Project Context: Landing Page Manufacturing
+
+## Documentation Resources
+
+### Primary Technical Reference
+**https://developers.webflow.com** - Single source of truth for all technical documentation
+
+This covers:
+- Webflow Cloud deployment and configuration
+- DevLink setup and component export
+- Webflow Apps (Data Clients, Designer Extensions, Hybrid Apps)
+- All three API types (Data API, Designer API, Browser API)
+- Complete API reference documentation with interactive examples
+- Authentication flows (OAuth, site tokens)
+- Webhooks and integrations
+
+Actively maintained with real code examples you can test directly in the docs.
+
+### Secondary Resources (Use When Appropriate)
+- **help.webflow.com** - Non-technical, general user questions about using Webflow's visual interface (styling, CMS, forms, workspace management)
+- **university.webflow.com** - Learning concepts through video tutorials and courses (for visual learners, not quick reference)
+- **discourse.webflow.com** - Webflow Forum for community troubleshooting, edge cases, and real-world issues
+
+## Webflow Ecosystem Overview
+
+### Webflow Cloud
+- Serverless hosting environment powered by Cloudflare
+- Deploy full-stack applications (Next.js, Astro) alongside Webflow site
+- Handles edge hosting and CI/CD through native GitHub integration
+
+### Webflow Apps
+- **Data Clients**: Interact with Webflow's REST APIs for CMS content, forms, assets
+- **Designer Extensions**: Run inside Webflow Designer to manipulate elements, styles, components
+- **Hybrid Apps**: Combine both capabilities for comprehensive functionality
+
+### DevLink
+- Exports Webflow components as production-ready React code
+- Maintains styles, variables, and interactions
+- Sync changes from Webflow with CLI command: `npx webflow devlink sync`
+- Currently in beta but accessible with Webflow Cloud app configuration
+
+### Testing Webflow Apps
+- Test apps within development workspace before submission
+- Request up to 5 test users by emailing developers@webflow.com
+- Apps remain private until approved for Marketplace
+
+## Common Form Button Issues
+
+### Troubleshooting Checklist
+1. **Z-Index Stacking Conflicts**: Check for overlapping elements with higher z-index
+2. **Pointer Events**: Verify no parent/button has `pointer-events: none`
+3. **Transparent Overlays**: Use DevTools to inspect actual click target
+4. **Component Instances**: Ensure working with correct main component vs instance
+5. **Publish vs Preview**: Test on live URL, not preview mode
+6. **Custom Code**: Check for unclosed tags or script loading errors
+7. **Form Structure**: Verify submit button is inside form element
+8. **DevLinkProvider**: Ensure properly wrapped in React app for Webflow interactions
+9. **Global CSS**: Import DevLink-generated CSS file
+
+### Quick Diagnostic
+If button isn't working, temporarily add to test pointer-events:
+```css
+* { pointer-events: auto !important; }
+```
+
+### Embedded Components
+- Native Webflow components work seamlessly
+- iFrames have same-origin policy restrictions
+- Webflow Cloud apps with DevLink require proper provider setup

@@ -218,7 +218,7 @@
 
 .nav_banner-layout {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }

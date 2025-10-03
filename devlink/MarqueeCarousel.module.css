@@ -41,8 +41,9 @@
 }
 
 .is-body-l {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.4;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -107,6 +108,8 @@
 
 .marquee_layout.is-logos {
   overflow: hidden;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 .marquee_layout.is-testimonials {
