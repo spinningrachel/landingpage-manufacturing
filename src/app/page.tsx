@@ -1,6 +1,6 @@
 'use client';
 
-import { PricingForm } from '@/components/devlink/PricingForm';
+import { SalesforceForm } from '@/components/SalesforceForm';
 import { NavBlockNoMenu } from '../../devlink/NavBlockNoMenu';
 import { FooterNoNewsletter } from '../../devlink/FooterNoNewsletter';
 import dynamic from 'next/dynamic';
@@ -87,8 +87,8 @@ export default function App() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-blue-400 to-green-500 to-green-300 rounded-2xl blur opacity-75"></div>
                 <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
                   <h4 className="text-darkgray text-lg font-extrabold mb-6">See Visual Layer in Action</h4>
-                  <p className="text-gray-600 mb-6">Send us your details. We'll get back to you ASAP to schedule a personalized demo.</p>
-                  <PricingForm />
+                  <p className="text-gray-600 mb-0">Send us your details. We'll get back to you ASAP to schedule a personalized demo.</p>
+                  <SalesforceForm />
                 </div>
               </div>
             </div>
@@ -311,7 +311,7 @@ Continuously analyze production images in near real-time. Detect defects and sur
               <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
                 <h4 className="text-darkgray font-extrabold text-lg mb-6">Get Started Today</h4>
                 <p className="text-gray-600 mb-6">Send us your details, and we'll get back to you to schedule a personalized demo.</p>
-                <PricingForm />
+                <SalesforceForm />
               </div>
             </div>
 
