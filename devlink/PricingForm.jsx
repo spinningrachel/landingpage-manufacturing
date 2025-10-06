@@ -14,19 +14,22 @@ export function PricingForm({
         className={_utils.cx(_styles, "form")}
         name="wf-form-PricingForm"
         data-name="PricingForm"
-        method="get"
         id="wf-form-PricingForm"
         {...formProps}
       >
+        <input type="hidden" name="oid" value="00Dd1000004UXtt" />
+        <input type="hidden" name="retURL" value="https://visual-layer.com/manufacturing" />
+        <input type="hidden" name="debug" value="1" />
+        <input type="hidden" name="debugEmail" value="rachel@visual-layer.com" />
         <_Builtin.FormBlockLabel
           className={_utils.cx(_styles, "field-label")}
-          htmlFor="name"
+          htmlFor="last_name"
         >
           {"Name"}
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextInput
           className={_utils.cx(_styles, "text-field-3")}
-          name="name"
+          name="last_name"
           maxLength={256}
           data-name="Name"
           placeholder="Enter your full name"
@@ -34,7 +37,7 @@ export function PricingForm({
           type="text"
           required={true}
           autoFocus={false}
-          id="name"
+          id="last_name"
         />
         <_Builtin.FormBlockLabel
           className={_utils.cx(_styles, "field-label-2")}
@@ -62,12 +65,12 @@ export function PricingForm({
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextInput
           className={_utils.cx(_styles, "text-field")}
-          name="field"
+          name="company"
           maxLength={256}
           data-name="Field"
           placeholder="Your company website"
           disabled={false}
-          type="url"
+          type="text"
           required={true}
           autoFocus={false}
           id="Company-website-URL"
@@ -82,7 +85,7 @@ export function PricingForm({
         </_Builtin.FormBlockLabel>
         <_Builtin.FormTextarea
           className={_utils.cx(_styles, "textarea")}
-          name="Reason-for-meeting"
+          name="description"
           maxLength={5000}
           data-name="Reason for meeting"
           placeholder="What would you most like to focus on when we meet up?"
