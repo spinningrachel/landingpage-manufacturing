@@ -9,7 +9,7 @@ export function SalesforceForm() {
       className={styles.form}
     >
       <input type="hidden" name="oid" value="00Dd1000004UXtt" />
-      <input type="hidden" name="retURL" value="https://visual-layer.com/manufacturing" />
+      <input type="hidden" name="retURL" value="https://meetings.salesloft.com/visuallayer/schedule-a-demo" />
 
       <label htmlFor="last_name" className={styles.label}>Name</label>
       <input
